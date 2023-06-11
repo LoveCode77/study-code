@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    let obj={
+        a:'hello',
+        b:'yes'
+    }
+    console.log(obj);
+    let json='{"a":"hello","b":"yes!!!"}';
+    console.log(json);
+    let object=JSON.parse(json);
+    console.log(object);
+
+    let json01=JSON.stringify(object);
+    console.log(json01);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="age">
+        <button v-on:click="age++">生日</button>
+        <button v-on:click="cancle">延年益寿丹</button>
+        {{name}}今年{{age}}岁了！
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        let vm=new Vue({
+            el:"#app",
+            data: { 
+                name: "tom",
+                age:10
+            },
+            methods:{
+                cancle(){
+                    this.age--;
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

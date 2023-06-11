@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/commonHeader.css">
+    <link rel="stylesheet" href="css/send.css">
+
+    <!--富文本插件-->
+    <script  type="text/javascript" src="ueditor/utf8-php/ueditor.config.js"></script>
+    <script type="text/javascript"  src="ueditor/utf8-php/ueditor.all.min.js"></script>
+    <script type="text/javascript"  src="ueditor/utf8-php/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    UE.getEditor('pcArticleCont')   //pcArticleCont对应调用的id
+</script>
+
+<div class="commonHeader">
+    <div class="logo">
+        <img src="logo.png ">
+    </div>
+    <div class="nav">
+        <ul>
+            <Li><a href=""> 首页</a></Li>
+            <Li><a href=""> 个人</a></Li>
+            <Li><a href="">回复</a></Li>
+            <Li><a href="">回复</a></Li>
+        </ul>
+    </div>
+    <div class="exit">
+        <a href="">Tom</a>
+        <a href="">退出系统</a>
+    </div>
+</div>
+
+<div class="banner">
+</div>
+
+<form method="post" action="www.">
+
+    <div class="zhong">
+        <input type="text" name="" placeholder="标题">
+        <select name=""  placeholder="帖子类型">
+            <option value="无">无</option>
+            <option value="失物招领">失物招领</option>
+            <option value="学习交流">学习交流</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <div class="center">
+        <script class="input" type="text/plain" id="pcArticleCont" name="pcArticleCont"  ></script>
+    </div>
+    <div class="footer">
+        <input type="submit" value="发 表">
+    </div>
+
+</form>
+</body>
+</html>

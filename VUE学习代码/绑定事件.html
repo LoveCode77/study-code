@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <div id="app">
+        {{num}}
+        <!-- <button v-on:click="num++">点赞</button>
+        <button v-on:click="num--">取消</button>   -->
+            <!-- 简写版 -->
+        <button v-on:click="num++">点赞</button>
+        <button v-on:click="num--">取消</button>    
+
+        <div style="border: 1px solid red;padding: 40px;" @click.once="hello">
+            <div  style="border: 1px solid rgb(22, 73, 182);padding: 5px;" @click.stop="hello">
+                <a href="http://www.baidu.com" @click.prevent.stop="hello1" >去百度</a>
+            </div>
+ 
+        </div>
+
+        <input type="text" v-model="num" @keyup.up="num+=2" @keyup.down="num-=2" @click.ctrl="num=10">
+    </div>
+    <script>
+        let vm=new Vue({
+            el:"#app",
+            data:{
+                num:0
+            },
+            methods:{
+                hello(){
+                   alert("提示：呼出一次");
+                },
+                hello1(){
+                   alert("提示:去百度");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div id="div1">
+    good!
+</div>
+
+<script type="text/javascript">
+    let div1=document.getElementById("div1")
+    let attribute = div1.getAttributeNode("id");
+    let firstChild = div1.firstChild;
+
+    console.log(div1.nodeType);
+    console.log(attribute.nodeType);
+    console.log(firstChild.nodeType);
+    console.log("---------------------");
+    console.log(div1.nodeName);
+    console.log(attribute.nodeName);
+    console.log(firstChild.nodeName);
+    console.log("---------------------");
+    console.log(div1.nodeValue);
+    console.log(attribute.nodeValue);
+    console.log(firstChild.nodeValue);
+</script>
+</body>
+</html>

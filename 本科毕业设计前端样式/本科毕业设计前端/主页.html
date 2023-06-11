@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/commonHeader.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <style type="text/css">
+        .content{
+            /*background-color: #adca84;*/
+
+            margin-top: 10px;
+            width: 100%;
+            height: 971px;
+        }
+        .content .cLeft{
+            background-color: #5875FF;
+
+            float: left;
+            width: 240px;
+            height:971px;
+        }
+        .content .cLeft ul{
+
+            list-style: none;
+        }
+        .content .cLeft ul li{
+            width: 240px;
+            height: 80px;
+            text-align: center;
+            border-bottom: #f0f0f0 solid 1px;
+        }
+        .content .cLeft ul li:hover{
+            background-color: #98caea;
+        }
+        .content .cLeft ul li a{
+            font-size: 25px;
+            line-height: 80px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .content .right{
+
+            margin-left: 20px;
+            float: left;
+            width: 1000px;
+            height: 971px;
+            border: #f0f0f0 solid 1px;
+            border-top: none;
+        }
+        .content .right .top{
+            background-color: #5875FF;
+            height: 80px;
+            border-bottom: #f0f0f0 solid 1px;
+        }
+        .content .right .top .sendTopic{
+            margin-top: 20px;
+            float: left;
+            margin-left: 50px;
+            width: 80px;
+            height: 40px;
+            background-color: #160fe9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .content .right .top .sendTopic a{
+            text-decoration: none;
+            line-height: 40px;
+            color: whitesmoke;
+        }
+        .content .right .top input{
+            margin-top: 15px;
+            margin-right: 50px;
+            float: right;
+            height: 50px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+        .content .right .topics{
+
+            width: 1000px;
+            height: 809px;
+            font-size: 17px;
+            border-bottom:  #f0f0f0 solid 1px;
+        }
+        .content .right .topics .topic
+        {
+            width: 1000px;
+            height: 80px;
+            border-bottom: #f0f0f0 solid 1px;
+        }
+        .content .right .topics .topic .cLeft{
+            float: left;
+            width: 100px;
+            height: 80px;
+            border-right: #f0f0f0 solid 1px;
+        }
+        .content .right .topics .topic .cLeft span{
+            display: block;
+            line-height: 80px;
+            text-align: center;
+            background-color: white;
+
+        }
+        .content .right .topics .topic .center1{
+            float: left;
+            width: 596px;
+            height: 80px;
+            border-right: #f0f0f0 solid 1px;
+        }
+        .content .right .topics .topic .center1 a{
+            margin-left: 20px;
+            line-height: 80px;
+            text-decoration: none;
+        }
+        .content .right .topics .topic .center1 a:hover{
+            text-decoration: underline;
+        }
+
+        .content .right .topics .topic .center2{
+            float: left;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+            border-right: #f0f0f0 solid 1px;
+        }
+        .content .right .topics .topic .center2 a{
+
+            line-height: 80px;
+            text-decoration: none;
+        }
+        .content .right .topics .topic .center2 a:hover{
+            text-decoration: underline;
+        }
+
+        .content .right .topics .topic .right{
+            margin-left:0px;
+            float: left;
+            width: 100px;
+            height: 80px;
+            text-align: center;
+        }
+        .content .right .topics .topic .right span{
+            line-height: 80px;
+        }
+        .content .right .bottom{
+            background-color: #0d8f1e;
+            width: 1000px;
+            height: 80px;
+        }
+        .content .right .bottom a.first{
+            margin-left: 70px;
+        }
+
+        .content .right .bottom a{
+            display: block;
+            float: left;
+            margin-top: 15px;
+            height: 48px;
+            width: 80px;
+            margin-left: 30px;
+            text-decoration: none;
+            background-color: #a7fa95;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            color: black;
+            border: black solid 1px;
+        }
+        .content .right .bottom a:hover{
+            color: blue;
+            border: blue solid 1px;
+        }
+        .content .right .bottom .jump{
+
+        }
+        .content .right3{
+            background-color: cadetblue;
+
+            float: left;
+            margin-left: 20px;
+            width: 237px;
+            height: 971px;+
+        }
+        .content .right3 .top3{
+            background-color: #f8fcd4;
+
+            width: 237px;
+            height: 80px;
+            border-bottom: #f0f0f0 solid 1px;
+            text-align: center;
+        }
+        .content .right3.right3 .top3 span{
+            line-height: 80px;
+            font-size: 20px;
+        }
+        .content .right3 .center3 {
+            width: 237px;
+            height: 809px;
+            border-bottom: #f0f0f0 solid 1px;
+            text-align: center;
+        }
+        .content .right3 .center3 .one{
+            width: 237px;
+            height: 80px;
+            border-bottom: #f0f0f0 solid 1px;
+            text-align: center;
+        }
+        .content .right3 .center3 .one .left3{
+            float: left;
+            width: 57px;
+            height: 80px;
+            border-right:#f0f0f0 solid 1px;
+        }
+        .content .right3 .center3  .one .left3 span{
+            line-height: 80px;
+            font-size: 20px;
+        }
+        .content .right3 .center3 .one .right33{
+            float: left;
+            width: 179px;
+            height: 80px;
+        }
+        .content .right3 .center3 .one .right33 span{
+            display: block;
+            text-align: left;
+            margin-left: 10px;
+            line-height: 80px;
+            font-size: 20px;
+        }
+        .content .right3 .bottom3{
+            background-color: #08f528;
+            width: 237px;
+            height: 80px;
+        }
+        .footer{
+            background-color: #f8fcd4;
+
+            margin-top: 10px;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="commonHeader">
+    <div class="logo">
+        <img src="logo.png ">
+    </div>
+    <div class="nav">
+        <ul>
+            <Li><a href=""> 首页</a></Li>
+            <Li><a href=""> 个人</a></Li>
+            <Li><a href="">回复</a></Li>
+            <Li><a href="">回复</a></Li>
+        </ul>
+    </div>
+    <div class="exit">
+        <a href="">Tom</a>
+        <a href="">退出系统</a>
+    </div>
+</div>
+
+<div class="banner">
+
+</div>
+<!--nav content left-->
+<div class="content">
+    <div class="cLeft">
+            <ul>
+                <li><a href="帖子页面.html" >看帖</a> </li>
+                <li><a href="">学习交流</a> </li>
+                <li><a href="">失物招领</a> </li>
+                <li><a href="">校内活动</a> </li>
+                <li><a href="">精品贴</a> </li>
+            </ul>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="sendTopic">
+                <a href="发表帖子.html">发 帖</a>
+            </div>
+            <input type="search" placeholder="请输入搜素" name="search">
+        </div>
+        <div class="topics">
+            <div class="topic">
+                <div class="cLeft">
+                    <span>11</span>
+                </div>
+                <div class="center1">
+                    <a href="单个帖子.html">河南农大一所百年老校</a>
+                </div>
+                <div class="center2">
+                    <a href="">tom</a>
+                </div>
+                <div class="right">
+                    <span>2/1/15:00</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="cLeft">
+                    <span>11</span>
+                </div>
+                <div class="center1">
+                    <a href="">河南农大一所百年老校</a>
+                </div>
+                <div class="center2">
+                    <a href="">tom</a>
+                </div>
+                <div class="right">
+                    <span>2/1/15:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="" class="first">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">下一页</a>
+            <a href="">尾页</a>
+        </div>
+    </div>
+    <div class="right3">
+        <div class="top3">
+            <span>热搜榜</span>
+        </div>
+        <div class="center3">
+          <div class="one">
+              <div class="left3">
+                  <span>1</span>
+              </div>
+              <div class="right33">
+                  <span>农大换校长了</span>
+              </div>
+          </div>
+        </div>
+        <div class="bottom3"></div>
+    </div>
+</div>
+
+<div class="footer"></div>
+</body>
+</html>

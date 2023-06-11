@@ -1,0 +1,36 @@
+
+body{
+    background-color: #f0f0f0;
+}
+.content{
+    background-color: white;
+    width: 1000px;
+    height: 800px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.content .left{
+    float: left;
+    width: 199px;
+    height: 800px;
+    /*border-right: #f0f0f0 solid 1px;*/
+}
+.content .left ul{
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.content .left ul li{
+    height: 60px;
+    width: 198px;
+}
+.content .left ul>.mark{
+    background-color: #5875FF;
+}
+.content .left ul li a{
+
+    line-height: 60px;
+    font-size: 25px;
+    text-decoration: white;
+    color: black;
+}

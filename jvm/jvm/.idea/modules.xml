@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jvm.iml" filepath="$PROJECT_DIR$/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm01/jvm01.iml" filepath="$PROJECT_DIR$/jvm01/jvm01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm02/jvm02.iml" filepath="$PROJECT_DIR$/jvm02/jvm02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm05/jvm05.iml" filepath="$PROJECT_DIR$/jvm05/jvm05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm08/jvm08.iml" filepath="$PROJECT_DIR$/jvm08/jvm08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm12/jvm12.iml" filepath="$PROJECT_DIR$/jvm12/jvm12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm15/jvm15.iml" filepath="$PROJECT_DIR$/jvm15/jvm15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm9/jvm9.iml" filepath="$PROJECT_DIR$/jvm9/jvm9.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .header{
+            width: 1000px;
+            height: 80px;
+            text-align: center;
+        }
+        .header span{
+            font-size: 40px;
+            line-height: 80px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+        .content{
+            background-color: #03a9f4;
+
+            width: 1000px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        .content .one{
+            /*background-color: #08f528;*/
+
+            height: 80px;
+            width: 800px;
+           /*margin: 0 auto;*/
+        }
+        .content .one .left{
+            /*background-color: #8d7b36;*/
+
+            height: 80px;
+            width:300px;
+            float: left;
+            text-align: right;
+        }
+        .content .one .left span{
+            line-height: 80px;
+        }
+        .content .one .right{
+            /*background-color: blue;*/
+
+            width: 500px;
+            float: left;
+        }
+        .content .one .right input{
+
+            height: 60px;
+            width: 500px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <input type="text" name="userName" placeholder="请输入用户名">
+    <div class="header">
+        <span>请填写你的个人信息</span>
+    </div>
+    <div class="one">
+        <div class="left">
+            <span>用户名：</span>
+        </div>
+        <div class="right">
+            <input type="text" name="">
+        </div>
+    </div>
+    <div class="one">
+        <div class="left">
+            <span>用户名：</span>
+        </div>
+        <div class="right">
+            <input type="text" name="">
+        </div>
+    </div>
+    <div class="one">
+        <div class="left">
+            <span>用户名：</span>
+        </div>
+        <div class="right">
+            <input type="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="left">
+            <span></span>
+        </div>
+        <div class="right">
+            <input type="submit" value="提交">
+        </div>
+    </div>
+</div>
+</body>
+</html>

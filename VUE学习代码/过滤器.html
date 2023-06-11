@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <div id="app">
+        <h1 v-for="user in users">
+            <!-- {{user.name}}==》{{user.gender==0?"man":"woman"}} -->
+            {{user.name}}--{{user.gender|genderFilter}}
+            {{user.name}}--{{user.gender|gFilter}}
+            
+        </h1>
+    </div>
+
+    <script>
+        // 全局过滤器
+        Vue.filter('gFilter', function (value) {
+            if(value==0){
+                        return "be a man";
+                    }else{
+                        return " be a woman";
+                    }
+        });
+        let vm=new Vue({
+            el:"#app",
+            data:{
+                users:[
+                    {name:'刘亦菲',gender:1,age:21},
+                    {name:'张曼玉',gender:1,age:22},
+                    {name:'吴京',gender:0,age:11},
+                    {name:'小犹太',gender:1,age:41},
+                    {name:'高圆圆',gender:1,age:21}
+
+                ]
+            },
+            filters:{
+                genderFilter(value){
+                    if(value==0){
+                        return "man";
+                    }else{
+                        return "woman";
+                    }
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>

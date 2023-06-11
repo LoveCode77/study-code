@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <div id="test">
+      <ul>
+          <!--:key="index提高效率  -->
+        <li v-for="(user,index) in users" :key="index" v-if="user.gender=='男'">
+            {{index}},{{user.name}},{{user.gender}},{{user.age}}
+            
+            <span v-for="(v,k,i) in user">
+               {{i}},{{k}}={{v}}
+            </span>
+        </li>
+      </ul>
+
+      <div v-for="(num,index) in number" :key="index">
+        number[{{index}}]={{num}}
+      </div>
+
+      <h1>if</h1>
+
+      <button  @click="show=!show">点击显示或隐藏</button>
+      <h1 v-if="show">if 显示</h1>
+      <h1 v-show="show">show 显示</h1>
+
+      <h1>if-else</h1>
+      <button  @click="random=Math.random()">随机显示</button>
+      <h1 v-if="random>0.5">0.5</h1>
+      <h1 v-else-if="random>0.4">0.4</h1>
+      <h1 v-else-if="random>0.3">0.3</h1>
+      <h1 v-else-if="random>0.2">0.2</h1>
+      <h1 v-else-if="random>0.1">0.1</h1>
+    </div>
+    <script>
+        let vm=new Vue({
+            el:"#test",
+            data:{
+                users:[
+                    {name:'刘亦菲',gender:'女',age:21},
+                    {name:'张曼玉',gender:'女',age:22},
+                    {name:'吴京',gender:'男',age:11},
+                    {name:'小犹太',gender:'女',age:41},
+                    {name:'高圆圆',gender:'女',age:21},
+
+                ],
+                number:[1,2,3,4,6],
+                show:true,
+                msg:"显示详细信息",
+                random:1
+
+            },
+            methods:{
+                change(msg){
+                    if(msg=="显示详细信息"){
+                        msg="隐藏详细信息";
+                    }
+                    else{
+                        msg="显示详细信息";
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

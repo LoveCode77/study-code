@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="stiatic/js/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+    <div class="important" id="first"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="important"></div>
+
+    <script>
+        let div = $("div");
+        let important = $(".important");
+        let first = $("#first");
+
+        div.css("weight","100%").css("height","80px").css("border","black solid 1px");
+        important.css("backgroundColor","pink");
+        first.html("标题");
+        first.css("textAlign","center");
+    </script>
+</body>
+</html>

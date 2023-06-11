@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--父绝子相-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    .div1{
+        width: 500px;
+        height: 500px;
+        border: black solid 1px;
+        position: relative;
+        left: 50px;
+        top:50px;
+    }
+    .div2{
+        position: absolute;
+        left: 100px;
+        top:100px;
+        background-color: #f8fcd4;
+        height: 100px;
+        width: 100px;
+    }
+    .div3{
+        position: absolute;
+        left: 100px;
+        bottom:100px;
+        background-color: #f8fcd4;
+        height: 100px;
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="div1" >
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+</html>

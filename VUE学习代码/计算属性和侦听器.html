@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <div id="app">
+        <ul>
+            <li>西游记价格：{{xyjPrice}}，数量：<input type="number" v-model="xyjNumber"></li>
+            <li>西游记价格：{{shzPrice}}，数量：<input type="number" v-model="shzNumber"></li>
+            <li>总价{{totalPrice}}</li>
+           提示： {{msg}}
+        </ul>
+    </div>
+    <script>
+         
+        const vm = new Vue({
+            el: '#app',
+            data:{
+                xyjPrice:99.86,
+                shzPrice:199.86,
+                xyjNumber:12,
+                shzNumber:14,
+                msg:""
+            },
+            computed:{
+                totalPrice(){
+                    return this.xyjPrice*this.xyjNumber+this.shzNumber*this.shzPrice;
+                }
+            },
+            watch:{
+                xyjNumber(newVal,oldVal){
+                    if(newVal>100){
+                        this.msg="库存充足";
+                    }
+                    if(newVal<10){
+                        this.msg="库存告急";
+                    }
+                    if(newVal<=0){
+                        this.msg="库存为0";
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

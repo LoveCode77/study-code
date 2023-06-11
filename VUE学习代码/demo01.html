@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+   <div id="app">
+    <a v-bind:href="link">baidu</a>
+    <a v-bind:href="link">qq</a>
+    <a v-bind:href="link">bzhan</a>
+    <a v-bind:href="link">baidu</a>
+
+    <span v-bind:class="{active:isActive,'test-danger':hasError}"
+    v-bind:style="{color:c,fontSize:size}"
+    >你好</span>
+   </div>
+
+    <script>
+        let vm=new Vue({
+            el:"#app",
+            data:{
+                link:"http://www.qq.com",
+                isActive:true,
+                hasError:true,
+                c:'red',
+                size:'100px'
+            }
+        });
+    </script>
+</body>
+</html>

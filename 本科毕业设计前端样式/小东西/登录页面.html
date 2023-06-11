@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            background-image: url("../image/img.png");
+            background-repeat: repeat;
+        }
+        .div1{
+            height: 160px;
+            /*background-color: #c7f106;*/
+        }
+        .div2{
+            float: left;
+            height: 400px;
+            width: 55%;
+            /*background-color: #08f528;*/
+        }
+        .div3{
+            float: left;
+            height: 400px;
+            width: 35%;
+            background-color: #9bff02;
+
+        }
+        .div4{
+            float: left;
+            height: 400px;
+            width: 10%;
+            /*background-color: #08f528;*/
+        }
+        .div5{}
+        .table1{
+            padding: 120px;
+        }
+        .table1 tr td {
+
+           text-align: center;
+
+        }
+        scanf{
+            font-family: 微软雅黑;
+            font-size: 16px;
+        }
+        select{
+            width: 140px;
+        }
+        form{
+
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3">
+   <form method="post" action="1111">
+       <table class="table1">
+           <tr>
+               <td> <scanf>用户名：</scanf></td>
+               <td> <input type="text" name="user"><br></td>
+           </tr>
+           <tr>
+               <td> <scanf>密  码：</scanf></td>
+               <td>  <input type="text" name="password"><br></td>
+           </tr>
+           <tr>
+               <td> <scanf>用户类型：</scanf></td>
+               <td>
+                   <!--                <input type="radio" name="type" value="1" id="type1"><label for="type1">学生</label>-->
+                   <!--                <input type="radio" name="type" value="2" id="type2"><label for="type2">老师</label>-->
+                   <!--                <input type="radio" name="type" value="3" id="type3"><label for="type3">系统人员</label>-->
+                   <select name="type" >
+                       <option value="1">学生</option>
+                       <option value="2">老师</option>
+                       <option value="3">系统人员</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td></td>
+               <td><input type="submit" value="登录"></td>
+           </tr>
+       </table>
+   </form>
+</div>
+<div class="div4">
+
+</div>
+<div class="div5"></div>
+
+</body>
+</html>

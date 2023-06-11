@@ -1,0 +1,16 @@
+Java HotSpot(TM) 64-Bit Server VM (25.281-b09) for windows-amd64 JRE (1.8.0_281-b09), built on Dec  9 2020 13:54:07 by "" with MS VC++ 15.9 (VS2017)
+Memory: 4k page, physical 8278180k(3782008k free), swap 11653316k(4074048k free)
+CommandLine flags: -XX:InitialHeapSize=62914560 -XX:MaxHeapSize=62914560 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC 
+8.372: [GC (Allocation Failure) [PSYoungGen: 15310K->2552K(17920K)] 15310K->12642K(58880K), 0.0038134 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+17.944: [GC (Allocation Failure) [PSYoungGen: 17836K->2532K(17920K)] 27926K->27940K(58880K), 0.0049668 secs] [Times: user=0.05 sys=0.08, real=0.00 secs] 
+17.949: [Full GC (Ergonomics) [PSYoungGen: 2532K->0K(17920K)] [ParOldGen: 25408K->27780K(40960K)] 27940K->27780K(58880K), [Metaspace: 3804K->3804K(1056768K)], 0.0108703 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+27.310: [Full GC (Ergonomics) [PSYoungGen: 15299K->1900K(17920K)] [ParOldGen: 27780K->40783K(40960K)] 43080K->42683K(58880K), [Metaspace: 3804K->3804K(1056768K)], 0.0127878 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+Heap
+ PSYoungGen      total 17920K, used 10446K [0x00000000fec00000, 0x0000000100000000, 0x0000000100000000)
+  eden space 15360K, 68% used [0x00000000fec00000,0x00000000ff633b08,0x00000000ffb00000)
+  from space 2560K, 0% used [0x00000000ffd80000,0x00000000ffd80000,0x0000000100000000)
+  to   space 2560K, 0% used [0x00000000ffb00000,0x00000000ffb00000,0x00000000ffd80000)
+ ParOldGen       total 40960K, used 40783K [0x00000000fc400000, 0x00000000fec00000, 0x00000000fec00000)
+  object space 40960K, 99% used [0x00000000fc400000,0x00000000febd3c38,0x00000000fec00000)
+ Metaspace       used 3811K, capacity 4536K, committed 4864K, reserved 1056768K
+  class space    used 420K, capacity 428K, committed 512K, reserved 1048576K

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="stiatic/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        // window.onload=function (){
+        //     //注意为选中第一个
+        //     let button = document.getElementsByTagName("button");
+        //     console.log(button);
+        //     let div = document.getElementsByTagName("div");
+        //     console.log(div);
+        //     button.onclick=function () {
+        //         for (let i = 0; i <div.length ; i++) {
+        //             div[i].style.width="500px";
+        //             div[i].style.height="100px";
+        //             div[i].style.backgroundColor="red";
+        //             div[i].innerText="i am a person!";
+        //         }
+        //     }
+        // }
+        $(document).ready(function () {
+            alert("1");
+            //获取元素节点，通过标签获取，直接使用双引号
+            let $button = $("button");
+            let $div = $("div");
+
+            $button.click(function () {
+                $div.show(1000);
+                //给所有盒子都设置内容
+                $div.html("我是盒子");
+            })
+
+
+        });
+
+    </script>
+</head>
+<body>
+<button>dianwo</button>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+<div> </div>
+</body>
+</html>

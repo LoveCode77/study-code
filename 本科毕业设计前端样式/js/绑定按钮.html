@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style  type="text/css">
+    .div1{
+        width: 500px;
+        height: 300px;
+        background-color: black;
+    }
+    .div2{
+        width: 500px;
+        height: 300px;
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+<input type="text" id="in">
+<input type="button" value="onclick" id="i">
+
+<div id="oneDiv" class="div1"></div>
+
+<script type="text/javascript">
+    var i=document.getElementById("i");
+    i.onclick=function (){
+    var id=document.getElementById("in").value;
+        alert(id);
+       location.href="https://www.baidu.com/";
+    }
+    var oneDiv=document.getElementById("oneDiv");
+    oneDiv.onclick=function () {
+        // oneDiv.className="div2";
+        oneDiv.style.width="600px";
+        oneDiv.style.backgroundColor="red";
+        oneDiv.style.border="green solid 10px";
+    }
+    window.onload=function () {
+        alert("work done!");
+    }
+</script>
+</body>
+</html>

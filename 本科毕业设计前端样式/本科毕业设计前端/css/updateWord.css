@@ -1,0 +1,158 @@
+
+.content{
+    /*background-color: #adca84;*/
+
+    margin-top: 10px;
+    width: 100%;
+    height: 971px;
+    font-size: 30px;
+}
+.content .cLeft{
+    background-color: #5875FF;
+
+    float: left;
+    width: 240px;
+    height:971px;
+}
+.content .cLeft ul{
+
+    list-style: none;
+}
+.content .cLeft ul li{
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.content .cLeft ul li:hover{
+    background-color: #98caea;
+}
+.content .cLeft ul li a{
+    font-size: 25px;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+.content .right{
+    float: left;
+    /*background-color: #0f4be5;*/
+    margin-left: 20px;
+    width: 1250px;
+    height: 500px;
+    border: #f0f0f0 solid 1px;
+    border-top: none;
+}
+
+.content .right .box{
+    margin-top: 50px;
+    margin-left: 50px;
+    /*background-color: whitesmoke;*/
+    width: 600px;
+    height: 800px;
+    /*border: black solid 1px;*/
+}
+.content .right .box .one{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    float: left;
+
+}
+.content .right .box .one span{
+    line-height: 80px;
+    font-size: 20px;
+}
+.content .right .box .two{
+    float: left;
+    width: 400px;
+    height: 80px;
+    /*background-color: #00b7ee;*/
+}
+.content .right .box .two input[type="text"]{
+    width: 400px;
+    height: 60px;
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: blue solid 1px;
+
+}
+.content .right .box .three{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+.content .right .box .three span{
+    line-height: 80px;
+    font-size: 20px;
+}
+.content .right .box .four{
+    float: left;
+    width: 400px;
+    height: 80px;
+}
+.content .right .box .four select{
+    width: 400px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: blue solid 1px;
+}
+.content .right .box .five{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+.content .right .box .five span{
+    line-height: 80px;
+    font-size: 20px;
+}
+.content .right .box .six{
+    float: left;
+    width: 400px;
+    height: 80px;
+    /*background-color: #00b7ee;*/
+}
+.content .right .box .six input[type="text"]{
+    width: 400px;
+    height: 60px;
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: blue solid 1px;
+}
+
+
+
+
+
+
+.content .right .box .seven{
+    float: left;
+    width: 500px;
+    height: 80px;
+}
+.content .right .box .seven input[type="submit"]{
+    margin-left: 150px;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+}
+
+.footer{
+    background-color: #f8fcd4;
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}

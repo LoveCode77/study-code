@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .content {
+            width: 500px;
+            height: 600px;
+            background-color: #03a9f4;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+<div  id="content" class="content"></div>
+<script>
+    var content = document.getElementById("content");
+
+    console.log(window.getComputedStyle(content, null).width);//output:500px
+
+    console.log(getStyle(content, "width"));
+    console.log(getStyle(content, "height"));
+    console.log(getStyle(content, "opacity"));
+    console.log(getStyle(content, "background-color"));
+
+    /*
+     * 兼容方法，获取元素当前正在显示的样式。
+     * 参数：
+     *      obj     要获取样式的元素
+     *.     name    要获取的样式名
+    */
+    function getStyle(ele, attr) {
+        if (window.getComputedStyle) {
+            return window.getComputedStyle(ele, null)[attr];
+        }
+        return ele.currentStyle[attr];
+    }
+
+</script>
+</body>
+</html>

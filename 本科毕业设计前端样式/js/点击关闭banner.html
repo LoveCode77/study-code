@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top-banner{
+            background-color: blue;
+            height: 80px;
+        }
+        .w {
+            width: 1210px;
+            margin: 10px auto;
+            position: relative;
+        }
+        img {
+            display: block;
+            width: 1210px;
+            height: 80px;
+            background-color: #2b6727;
+        }
+        a {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+            width: 20px;
+            height: 20px;
+            font: 700 14px/20px "simsum";
+            text-align: center;
+        }
+        .hide {
+            display: none!important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-banner" id="topBanner">
+    <div class="w">
+        <img src="" alt=""/>
+        <a href="#" id="closeBanner">×</a>
+    </div>
+</div>
+<script type="text/javascript">
+    let topBanner=document.getElementById("topBanner");
+    let closeBanner=document.getElementById("closeBanner");
+    let img1=document.getElementsByTagName("img")
+    closeBanner.onclick=function () {
+        // topBanner.className="hide"
+        topBanner.style.display="none";
+    }
+</script>
+</body>
+</html>

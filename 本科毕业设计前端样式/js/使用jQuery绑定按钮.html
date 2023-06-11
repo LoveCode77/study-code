@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="div1"></div>
+<input type="text" id="in">
+<input type="button" value="onclick" id="i">
+<script type="text/javascript" src="jquery.js">
+
+    $(function (){
+        $("#i").click(function () {
+
+            var string=$("#in").val();
+            location.href="http://localhost:8080/information/word/allWord";
+        });
+    });
+
+</script>
+</body>
+</html>

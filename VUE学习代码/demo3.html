@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <div id="app">
+        <input type="checkbox" v-model="language" value="Java">java</input>
+        <input type="checkbox" v-model="language" value="C++">C++</input>
+        <input type="checkbox" v-model="language" value="PHP">PHP</input>
+        <br>
+        你选中了{{language.join(",")}}
+    </div>
+    <script>
+        let vm=new Vue({
+            el:"#app",
+            data:{
+                language:['Java','C++','PHP']
+            }
+        })
+
+    </script>
+</body>
+</html>
