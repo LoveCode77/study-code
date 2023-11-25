@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<h1>测试九大请求</h1>
+<h2>简单请求</h2>
+<!-- 简单请求 -->
+<button onclick="demo('get')">get</button>
+<button onclick="demo('post')">post</button>
+<button onclick="demo('head')">head</button>
+<h2>会有预检请求</h2>
+<!-- 会有预检请求 -->
+<button onclick="demo('put')">put</button>
+<button onclick="demo('patch')">patch</button>
+<button onclick="demo('delete')">delete</button>
+<h2>问题请求 目前没有完成测试</h2>
+<!-- 三个问题  -->
+<button onclick="demo('options')">options</button>
+<button onclick="demo('connect')">connect</button>
+<button onclick="demo('trace')">trace</button>
+<h1>预检请求继续测试</h1>
+<p>除了put pathc delete 会发送预检请求外，官方文档说明：还有 请求头中包含<strong>自定义首部字段</strong>
+    和向服务器发送了<strong>application/json格式的数据</strong>
+</p>
+<button onclick="custom('get')">自定义首部字段</button>
+<button onclick="addJson('post')">application/json格式的数据</button>
+<h1>Access-Control-Allow-Headers测试</h1>
+<button onclick="headers('get')">额外的请求头</button>
+<body>
+    <script>
+        function demo(type) {
+            axios({
+                method: type,
+                url: 'http://127.0.0.1:3000/api',
+            }).then(function (response) {
+                // 处理成功情况
+                alert(response.data);
+                console.log(response);
+            });
+        }
+        function deal(type) {
+            axios({
+                method: type,
+                url: 'http://127.0.0.1:3000/api',
+            }).then(function (response) {
+                // 处理成功情况
+                alert(response.data);
+                console.log(response);
+            });
+        }
+        function custom(type) {
+            axios({
+                method: type,
+                url: 'http://127.0.0.1:3000/api',
+                headers: {'X-Requested-With': 'XMLHttpRequest'},
+            }).then(function (response) {
+                // 处理成功情况
+                alert(response.data);
+                console.log(response);
+            });
+        }
+        function addJson(type) {
+            axios({
+                method: type,
+                url: 'http://127.0.0.1:3000/api',
+                data:{
+                    name:"xiongdu",
+                    age:18
+                }
+            }).then(function (response) {
+                // 处理成功情况
+                alert(response.data);
+                console.log(response);
+            });
+        }
+        
+        // axios.delete('http://127.0.0.1:3000/api')
+        //     .then(function (response) {
+        //         // 处理成功情况
+        //         alert(response.data);
+        //         console.log(response);
+        //     })
+    </script>
+</body>
+
+</html>
