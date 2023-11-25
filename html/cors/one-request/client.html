@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<h1>测试单一请求</h1>
+<button onclick="demo('get')">get1</button>
+<body>
+    <script>
+        function demo(type) {
+            axios({
+                method: type,
+                url: 'http://127.0.0.1:4000/test',
+            }).then(function (response) {
+                // 处理成功情况
+                alert(response.data);
+                console.log(response);
+            });
+        }
+       
+        
+   
+    </script>
+</body>
+
+</html>
